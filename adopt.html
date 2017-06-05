@@ -283,7 +283,7 @@
       table += '<tr><td id="puppyId">' + '<strong>Puppy name</strong>: ' + puppy + '</td></tr>';
       table += '<tr><td id="paymentId">' + '<strong>Payment Type</strong>: ' + paymentType + '</td></tr>';
       table += '<tr><td id="totalId">' + '<strong>Total</strong>: $' + 500 + '</td></tr>';
-      table += '<tr><td id="totalPickupId">' + '<strong>Balance due</strong>: $' + 1800 + '</td></tr>';
+      table += '<tr><td id="totalPickupId">' + '<strong>Balance due</strong>: $' + 1000 + '</td></tr>';
       paymentFlag = true;
     }
     if (paymentType === "Deposit" && paymentFlag && puppy != "Choose" && pricey.indexOf(puppy) !== -1) {
@@ -291,14 +291,14 @@
         $("#puppyId").parent().replaceWith("<tr><td id='puppyId'>" + '<strong>Puppy name</strong>: ' + puppy + '</td></tr>');
         $("#paymentId").parent().replaceWith("<tr><td id='paymentId'>" + '<strong>Payment Type</strong>: ' + paymentType + '</td></tr>');
         $("#totalId").parent().replaceWith("<tr><td id='totalId'>" + '<strong>Total</strong>: $' + 500 + '</td></tr>');
-        $("#totalPickupId").parent().replaceWith("<tr><td id='totalPickupId'>" + '<strong>Balance due</strong>: $' + 1800 + '</td></tr>');
+        $("#totalPickupId").parent().replaceWith("<tr><td id='totalPickupId'>" + '<strong>Balance due</strong>: $' + 1000 + '</td></tr>');
     }
     if (paymentType === "Deposit" && !paymentFlag && puppy != "Choose" && regular.indexOf(puppy) !== -1) {
         console.log("there is something wrong here")
         table += '<tr class="success"><td id="puppyId">' + '<strong>Puppy name</strong>: ' + puppy + '</td></tr>';
         table += '<tr class="success"><td id="paymentId">' + '<strong>Payment Type</strong>: ' + paymentType + '</td></tr>';
         table += '<tr class="success"><td id="totalId">' + '<strong>Total</strong>: $' + 500 + '</td></tr>';
-        table += '<tr class="danger"><td id="totalPickupId">' + '<strong>Balance due</strong>: $' + 1500 + '</td></tr>';
+        table += '<tr class="danger"><td id="totalPickupId">' + '<strong>Balance due</strong>: $' + 700 + '</td></tr>';
         paymentFlag = true;
     }
     if (paymentType === "Deposit" && paymentFlag && puppy != "Choose" && regular.indexOf(puppy) !== -1) {
@@ -306,12 +306,12 @@
         $("#puppyId").parent().replaceWith("<tr><td id='puppyId'>" + '<strong>Puppy name</strong>: ' + puppy + '</td></tr>');
         $("#paymentId").parent().replaceWith("<tr><td id='paymentId'>" + '<strong>Payment Type</strong>: ' + paymentType + '</td></tr>');
         $("#totalId").parent().replaceWith("<tr><td id='totalId'>" + '<strong>Total</strong>: $' + 500 + '</td></tr>');
-        $("#totalPickupId").parent().replaceWith("<tr><td id='totalPickupId'>" + '<strong>Balance due</strong>: $' + 1500 + '</td></tr>');
+        $("#totalPickupId").parent().replaceWith("<tr><td id='totalPickupId'>" + '<strong>Balance due</strong>: $' + 700 + '</td></tr>');
     }
     if (paymentType === "Pay in full" && !paymentFlag  && puppy != "Choose" && pricey.indexOf(puppy) !== -1) {
       table += '<tr><td id="puppyId">' + '<strong>Puppy name</strong>: ' + puppy + '</td></tr>';
       table += '<tr><td id="paymentId">' + '<strong>Payment Type</strong>: ' + paymentType + '</td></tr>';
-      table += '<tr><td id="totalId">' + '<strong>Total</strong>: $' + 2300 + '</td></tr>';
+      table += '<tr><td id="totalId">' + '<strong>Total</strong>: $' + 1500 + '</td></tr>';
       table += '<tr class="danger"><td id="totalPickupId">' + '<strong>Balance due</strong>: $' + 0 + '</td></tr>';
       paymentFlag = true;
       console.log(paymentFlag);
@@ -319,13 +319,13 @@
     if (paymentType === "Pay in full" && paymentFlag && puppy != "Choose" && pricey.indexOf(puppy) !== -1) {
         $("#puppyId").parent().replaceWith("<tr><td id='puppyId'>" + '<strong>Puppy name</strong>: ' + puppy + '</td></tr>');
         $("#paymentId").parent().replaceWith("<tr><td id='paymentId'>" + '<strong>Payment Type</strong>: ' + paymentType + '</td></tr>');
-        $("#totalId").parent().replaceWith("<tr><td id='totalId'>" + '<strong>Total</strong>: $' + 2300 + '</td></tr>');
+        $("#totalId").parent().replaceWith("<tr><td id='totalId'>" + '<strong>Total</strong>: $' + 1500 + '</td></tr>');
         $("#totalPickupId").parent().replaceWith("<tr><td id='totalPickupId'>" + '<strong>Balance due</strong>: $' + 0 + '</td></tr>');
     }
     if (paymentType === "Pay in full" && !paymentFlag && puppy != "Choose" && regular.indexOf(puppy) !== -1) {
       table += '<tr><td id="puppyId">' + '<strong>Puppy name</strong>: ' + puppy + '</td></tr>';
       table += '<tr><td id="paymentId">' + '<strong>Payment Type</strong>: ' + paymentType + '</td></tr>';
-      table += '<tr><td id="totalId">' + '<strong>Total</strong>: $' + 2000 + '</td></tr>';
+      table += '<tr><td id="totalId">' + '<strong>Total</strong>: $' + 1200 + '</td></tr>';
       table += '<tr class="danger"><td id="totalPickupId">' + '<strong>Balance due</strong>: $' + 0 + '</td></tr>';
       paymentFlag = true;
     }
@@ -333,7 +333,7 @@
       console.log("Made it inside of paymet", paymentType)
       $("#puppyId").parent().replaceWith("<tr><td id='puppyId'>" + '<strong>Puppy name</strong>: ' + puppy + '</td></tr>');
       $("#paymentId").parent().replaceWith("<tr><td id='paymentId'>" + '<strong>Payment Type</strong>: ' + paymentType + '</td></tr>');
-      $("#totalId").parent().replaceWith("<tr><td id='totalId'>" + '<strong>Total</strong>: $' + 2000 + '</td></tr>');
+      $("#totalId").parent().replaceWith("<tr><td id='totalId'>" + '<strong>Total</strong>: $' + 1200 + '</td></tr>');
       $("#totalPickupId").parent().replaceWith("<tr><td id='totalPickupId'>" + '<strong>Balance due</strong>: $' + 0 + '</td></tr>');
     }
     table += "</table>"
@@ -359,21 +359,21 @@ var counter = 0;
         counter += 1;
       }
     } else if (typePayment === "Pay in full" && whichPuppie === "Phantom") {
-      price = 2300;
+      price = 1500;
     } else if (typePayment === "Pay in full" && whichPuppie === "Blondie") {
-      price = 2300
+      price = 1500
     } else if (typePayment === "Pay in full" && whichPuppie === "Sky") {
-      price = 2000;
+      price = 1200;
     } else if (typePayment === "Pay in full" && whichPuppie === "Purple") {
-      price = 2000;
+      price = 1200;
     } else if (typePayment === "Pay in full" && whichPuppie === "Kiwi") {
-      price = 2000;
+      price = 1200;
     } else if (typePayment === "Pay in full" && whichPuppie === "Violet") {
-      price = 2000;
+      price = 1200;
     } else if (typePayment === "Pay in full" && whichPuppie === "Curly") {
-      price = 2000;
+      price = 1200;
     } else if (typePayment === "Pay in full" && whichPuppie === "Blue") {
-      price = 2000;
+      price = 1200;
     }
     console.log("==>", price)
     inputBox.value = price;
@@ -381,4 +381,4 @@ var counter = 0;
   $( "#chosenDog,#typePayment" ).change( displayVals );
   displayVals();
   </script>
-</html>
+  </html>
